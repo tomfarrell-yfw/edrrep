@@ -4,4 +4,4 @@ Set oReg=GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer 
 strKeyPath = "Software\Microsoft\Windows\CurrentVersion\Run"
 strValueName = "regwmirunmethod"
 strExpandedValue = "echo all your bases are belong to us >  %userprofile%\bases.txt && notepad.exe  %userprofile%\bases.txt " 
-oReg.SetStringValue HKEY_CURRENT_USER,strKeyPath,strValueName,strValue
+oReg.SetExpandedStringValue HKEY_CURRENT_USER,strKeyPath,strValueName,strExpandedValue
