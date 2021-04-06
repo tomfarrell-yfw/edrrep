@@ -3,5 +3,6 @@ strComputer = "."
 Set oReg=GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & strComputer & "\root\default:StdRegProv")
 strKeyPath = "Software\Microsoft\Windows\CurrentVersion\Run"
 strValueName = "regwmirunmethod"
-strExpandedValue = "echo all your bases are belong to us >  %userprofile%\bases.txt && notepad.exe  %userprofile%\bases.txt " 
+strExpandedValue = "start msedge https://www.sophos.com" 
 oReg.SetExpandedStringValue HKEY_CURRENT_USER,strKeyPath,strValueName,strExpandedValue
+
